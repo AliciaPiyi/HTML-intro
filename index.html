@@ -92,6 +92,8 @@
 
     </ul>
 
+
+
     <!-- Lägga till olika typer av mediainnehåll -->
     <h2>Om Koltrasten</h2>
 
@@ -106,33 +108,81 @@
     <!-- Ett bra sätt att organisera olika typer utav gallerier (ljud, bild, video, grafik m.m) 
         är att använda elementet "figure" - det är ett strukturelement med tillhörande figcaption -->
 
-    <!-- Ett galleri -->
-    <h4>Ljudfiler</h4>
 
-    <figure>
-        <!-- ett ljudklipp från koltrasten -->
-        <!-- Ljud kan spelas med elementet audio -->
-        <!-- ett exempel på en "relativ" sökväg -->
-        <!-- Obs! För att få "spelkontroller" till audioelementet
+    <!-- Ett galleri -->
+
+    <!-- Ett exempel på ett omslutande element som passar här är section -->
+
+    <section>
+
+        <h4>Ljudfiler</h4>
+
+        <figure>
+            <!-- ett ljudklipp från koltrasten -->
+            <!-- Ljud kan spelas med elementet audio -->
+            <!-- ett exempel på en "relativ" sökväg -->
+            <!-- Obs! För att få "spelkontroller" till audioelementet
         anges attributet "controls" -->
 
-        <audio src="audiofiles/Turdus_merula_-_Common_Blackbird_XC541784.mp3" controls></audio>
+            <audio src="audiofiles/Turdus_merula_-_Common_Blackbird_XC541784.mp3" controls></audio>
 
-        <figcaption><a href="https://commons.wikimedia.org/wiki/File:Turdus_merula_-_Common_Blackbird_XC541784.mp3">Benoît Van Hecke</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption>
-    </figure>
+            <figcaption><a
+                    href="https://commons.wikimedia.org/wiki/File:Turdus_merula_-_Common_Blackbird_XC541784.mp3">Benoît
+                    Van Hecke</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via
+                Wikimedia Commons</figcaption>
+        </figure>
 
-    <figure>
+        <figure>
 
-        <audio src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Turdus_merula_-_Common_Blackbird_XC541788.mp3"
-            controls></audio>
+            <audio
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Turdus_merula_-_Common_Blackbird_XC541788.mp3"
+                controls></audio>
 
-        <figcaption><a
-                href="https://commons.wikimedia.org/wiki/File:Turdus_merula_-_Common_Blackbird_XC541788.mp3">Benoît Van
-                Hecke</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia
-            Commons
-        </figcaption>
+            <figcaption><a
+                    href="https://commons.wikimedia.org/wiki/File:Turdus_merula_-_Common_Blackbird_XC541788.mp3">Benoît
+                    Van
+                    Hecke</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia
+                Commons
+            </figcaption>
 
-    </figure>
+        </figure>
+
+    </section>
+
+    <!-- Ett galleri med videoklipp -->
+
+    <section>
+        
+        <h4>Videoklipp</h4>
+
+        <!-- Ett filmklipp kan visas med elementet video -->
+
+        <figure>
+            <video src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Turdus_merula_singing.webm"  controls  width="300" height="400"></video>
+            <figcaption>
+                <a href="https://commons.wikimedia.org/wiki/File:Turdus_merula_singing.webm">Larske</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+            </figcaption>
+        </figure>
+
+        <figure>
+            <video src="https://upload.wikimedia.org/wikipedia/commons/2/25/2022-10-14_LJUBLJANA_Krajinski_park_Tivoli_PASSERIFORMES_Turdus_merula_KOS.webm"  controls  width="300"></video>
+            <figcaption>
+                <a href="https://commons.wikimedia.org/wiki/File:2022-10-14_LJUBLJANA_Krajinski_park_Tivoli_PASSERIFORMES_Turdus_merula_KOS.webm">NaIzletuSi ™</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons
+            </figcaption>
+        </figure> 
+
+        <figure>
+            <video src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Male_Blackbird_singing_01.ogv"  controls  width="300"></video>
+            <figcaption>
+                <a href="https://commons.wikimedia.org/wiki/File:Male_Blackbird_singing_01.ogv">I, Tony Wills</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+            </figcaption>
+        </figure> 
+
+    </section>
+
+    <!-- En sidas innehåll kan delas in i olika element som ar betydelse, semantiska element -->
+    <!-- ex head, footer -->
+
 
 
 </body>
