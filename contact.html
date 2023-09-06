@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformulär</title>
+</head>
+
+<body>
+
+    <header>
+        Ett sidhuvud - webbplatsens identitet, ex en bild
+    </header>
+
+    <nav>
+        <!-- elementet pre ser till att blanksteg kan skrivas efter varandra -->
+        <pre></pre>
+        <!-- skapa länkar för att navigera mellan olika sidor -->
+        <!-- tecknet &nbsp kan användas i html för lite luft -->
+        <a href="index.html">Startsida</a> &nbsp;|&nbsp; <a href="birds.html">Om fåglar</a> &nbsp;|&nbsp;
+        <a href="contact.html">Kontakta oss</a>
+
+    </nav>
+
+    <h1>Kontakta oss gärna via formuläret</h1>
+
+    <!-- elementet form används för att skapa formulär - olika fält -->
+    <!-- methos post -->
+    <!-- methos get -->
+    <form action="#" method="get">
+
+        <p>
+            <!-- ett element som är tänk att vara ledtext till formulärfält  -->
+            <label for="first_name">Ditt förnamn:</label><br>
+            <input type="text" name="first_name" id="first_name">
+        </p>
+
+
+        <p>
+            <label for="last_name">Ditt efternamn:</label><br>
+            <input type="text" name="last_name" id="last_name">
+        </p>
+
+
+        <input type="submit" value="Skicka">
+
+
+    </form>
+
+    <br><br><br><br>
+
+    <footer>
+
+        <!-- Olika symboler, ex copyright kan visas genom att använda html entetis -->
+        &copy; Alicia Tsirigotis
+    </footer>
+
+</body>
+
+</html>
