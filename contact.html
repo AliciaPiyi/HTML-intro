@@ -26,9 +26,11 @@
     <h1>Kontakta oss gärna via formuläret</h1>
 
     <!-- elementet form används för att skapa formulär - olika fält -->
-    <!-- methos post -->
-    <!-- methos get -->
+    <!-- methos post ska användas så långt som möjligt, med extension live servr genereras ett http 405 fel tyvärr...-->
+    <!-- methos get ska undvikas, men kan användas för att testa applikationen. OBS input type=password skickas i klartext i url:en = väldigt tråkigt :( )-->
     <form action="#" method="get">
+
+        <!-- vissa fält kan man göra till obligatoriska -- attributet required -->
 
         <p>
             <!-- ett element som är tänk att vara ledtext till formulärfält  -->
@@ -42,7 +44,56 @@
             <input type="text" name="last_name" id="last_name">
         </p>
 
+        <p>
+             <!-- alternativt sätt att använda label element utan for attribut -->
+            <label>
+                Ange e-post: <br>
+                <input type="email" name="email" id="email">
+            </label>
+        </p>
 
+        <p>
+            <!-- önskat användarnamn, usernamne  med attributet placeholder kan man ev skippa ledtext -->
+            <!-- ange att fältet är obligatoriskt - attributet required -->
+            <input type="text" name="username" id="username" placeholder="Ditt användarnamn:" required minlength="4" maxlength="10">
+        </p>
+
+            
+        <p>
+            <label for="password">Ange lösenord</label> <br>
+            <input type="password" name="password" id="password">
+        </p>
+
+        <p>
+            Välj din favoritfärg nedan: <br>
+            <input type="color" name="" id="">
+        </p>
+
+        <p>
+            Från vilken vecka ska din användare börja gälla? <br>
+            <input type="week" name="" id="">
+        </p>
+
+
+        <!-- ett formulärelement som tillåtter störe textmängd -->
+        <p>
+            Berätta om dig själv - personligt brev: <br>
+            <textarea name="letter" id="letter" cols="30" rows="10"></textarea>
+        </p>
+        
+        <!-- ett element som används för att peka ut något i en lista kallas för select option -->
+        <p>
+            Vilka språk föredrar du: <br>
+
+            <select name="languages" id="languages" multiple size="4">
+                <option value="html">HTML - HyperText Markup Language</option>
+                <option value="swedish">Svenska</option>
+                <option value="engelish">Engelska</option>
+                <option value="secret">Rövarspråket</option>
+            </select>
+        </p>
+        
+        
         <input type="submit" value="Skicka">
 
 
